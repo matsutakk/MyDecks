@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "412604211422",
+    "project_id": "my-voice-tutor",
+    "storage_bucket": "my-voice-tutor.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:412604211422:android:ed42171f9dbf37c8cd224f",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwjpXLOvAA0ReJ-Vn_vU3hGUbwij5PEis"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:412604211422:android:33cfcf0443e7c5e4cd224f",
+        "android_client_info": {
+          "package_name": "com.example.my_voice_tutor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwjpXLOvAA0ReJ-Vn_vU3hGUbwij5PEis"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

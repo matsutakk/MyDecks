@@ -1,0 +1,311 @@
+{
+    "@@locale": "ja",
+    "appTitle": "My Decks",
+    "recentVocabulary": "最近の語彙",
+    "usefulPhrases": "役立つフレーズ",
+    "addAudio": "音声を追加",
+    "importFromFile": "ファイルから選択",
+    "recordNew": "新しく録音する",
+    "addTranscript": "文字起こしを追加",
+    "audioProcessing": "音声処理",
+    "processing": "処理中...",
+    "transcribingAndAnalyzing": "文字起こし＆言語分析中",
+    "audioTitle": "音声タイトル",
+    "detectedLanguages": "検出された言語",
+    "transcript": "文字起こし",
+    "createLearningContent": "学習コンテンツを作成",
+    "learningTips": "語学学習のヒント",
+    "learningContent": "学習コンテンツ",
+    "vocabulary": "語彙",
+    "grammar": "文法",
+    "conversation": "会話練習",
+    "saveLearningContent": "学習コンテンツを保存",
+    "learningQuiz": "学習クイズ",
+    "contentSaved": "学習コンテンツを保存しました",
+    "saveFailed": "保存に失敗しました： {error}",
+    "@saveFailed": {
+        "placeholders": {
+            "error": {
+                "type": "String"
+            }
+        }
+    },
+    "meaning": "意味",
+    "examples": "例文",
+    "addNote": "メモ追加",
+    "addToLearningList": "学習リストに追加",
+    "addedToLearningList": "{word}を学習リストに追加しました",
+    "@addedToLearningList": {
+        "placeholders": {
+            "word": {
+                "type": "String"
+            }
+        }
+    },
+    "audioHistory": "音声履歴",
+    "loadFailed": "読み込みに失敗しました： {error}",
+    "@loadFailed": {
+        "placeholders": {
+            "error": {
+                "type": "String"
+            }
+        }
+    },
+    "noAudioHistory": "音声履歴がありません",
+    "addFirstAudio": "最初の音声を追加してみましょう",
+    "audioLoadError": "音声の読み込みに失敗しました",
+    "playbackError": "再生中にエラーが発生しました",
+    "generalError": "エラーが発生しました",
+    "context": "コンテキスト",
+    "general": "一般",
+    "saved": "保存済み",
+    "save": "保存する",
+    "retry": "再読み込み",
+    "noVocabularyData": "語彙データがありません",
+    "addNewAudioToIncrease": "新しい音声を追加して語彙を増やしましょう",
+    "noPhraseData": "フレーズデータがありません",
+    "addNewAudioToIncreasePhrase": "新しい音声を追加してフレーズを増やしましょう",
+    "settings": "設定",
+    "addRecording": "録音を追加",
+    "recordNewConversation": "新しい会話を録音",
+    "recordNewConversationDescription": "新しい会話を録音して学習データに追加",
+    "importAudioFile": "音声ファイルをインポート",
+    "importAudioFileDescription": "既存の音声ファイルから学習データを作成",
+    "cancel": "キャンセル",
+    "fileSelectionError": "ファイル選択中にエラーが発生しました",
+    "fileInfo": "ファイル情報",
+    "fileName": "ファイル名",
+    "duration": "再生時間",
+    "loading": "読み込み中...",
+    "unknownDuration": "不明",
+    "titleAndNotes": "タイトルとメモ",
+    "title": "タイトル",
+    "optionalNotes": "メモ（任意）",
+    "titleRequired": "タイトルを入力してください",
+    "importAndAnalyze": "インポートして分析",
+    "audioImportSuccess": "音声ファイルが正常にインポートされました",
+    "audioImportError": "音声ファイル処理中にエラーが発生しました",
+    "addContent": "コンテンツを追加",
+    "importExisting": "既存ファイルをインポート",
+    "createNew": "新規作成",
+    "audio": "音声",
+    "document": "文書",
+    "image": "画像",
+    "recordAudio": "音声を録音",
+    "recordAudioDescription": "会話や音声を録音して英語を学ぼう",
+    "takePhoto": "写真を撮影",
+    "takePhotoDescription": "写真を撮影して英語を学ぼう",
+    "writeDiary": "日記を書く",
+    "writeDiaryDescription": "自分が作成した日記やメモから英語を学ぼう",
+    "unsupportedFileType": "サポートされていないファイル形式",
+    "unsupportedFileTypeDescription": "共有されたファイルはサポートされていない形式です。サポートされている形式: 音声(.mp3, .wav, .m4a, .aac, .flac, .ogg), 画像(.jpg, .png, .gif), 文書(.txt, .pdf, .doc, .docx)",
+    "ok": "OK",
+    "sharedTextReceived": "共有されたテキスト",
+    "shareProcessingError": "共有コンテンツの処理中にエラーが発生しました",
+    "importFile": "ファイルをインポート",
+    "metadata": "メタデータ",
+    "fileType": "ファイルタイプ",
+    "fileLocation": "ファイルの場所",
+    "fileSize": "ファイルサイズ",
+    "notes": "メモ",
+    "tags": "タグ",
+    "tagsHint": "カンマ区切りで入力 (例: 語学,会話,練習)",
+    "continueToProcessing": "続行",
+    "fileImportSuccess": "ファイルが正常にインポートされました",
+    "fileImportError": "ファイル処理中にエラーが発生しました",
+    "audioFile": "音声ファイル",
+    "documentFile": "テキスト・文書ファイル",
+    "imageFile": "画像ファイル",
+    "unknownFile": "不明なファイル形式",
+    "account": "アカウント",
+    "languageSettings": "言語設定",
+    "darkMode": "ダークモード",
+    "notificationSettings": "通知設定",
+    "profile": "プロフィール",
+    "goals": "学習目標",
+    "dataManagement": "データ管理",
+    "terms": "利用規約",
+    "privacy": "プライバシーポリシー",
+    "help": "ヘルプ",
+    "contact": "お問い合わせ",
+    "about": "アプリ情報",
+    "logout": "ログアウト",
+    "deleteAccount": "アカウント削除",
+  
+    "yes": "はい",
+    "no": "いいえ",
+    "close": "閉じる",
+  
+    "home": "ホーム",
+    "@home": {
+        "description": "ナビゲーションバーのホームボタンのラベル"
+    },
+    
+    "decks": "単語帳",
+    "@decks": {
+        "description": "ナビゲーションバーの単語帳ボタンのラベル"
+    },
+    
+    "history": "履歴",
+    "@history": {
+        "description": "ナビゲーションバーの履歴ボタンのラベル"
+    },
+    
+    "learningHistory": "学習履歴",
+    "@learningHistory": {
+        "description": "履歴画面のタイトル"
+    },
+    
+    "viewDetails": "詳細を見る",
+    "@viewDetails": {
+        "description": "詳細を見るボタンのラベル"
+    },
+    
+    "vocabularyListTitle": "単語帳一覧",
+    "@vocabularyListTitle": {
+        "description": "単語帳一覧画面のタイトル"
+    },
+    
+    "addNew": "新規追加",
+    "@addNew": {
+        "description": "新規追加ボタンのラベル"
+    },
+    
+    "createNewDeck": "新しい単語帳を作成",
+    "@createNewDeck": {
+        "description": "新しい単語帳作成ボタンのツールチップ"
+    },
+    
+    "noDeckYet": "単語帳がまだありません",
+    "@noDeckYet": {
+        "description": "単語帳がない場合の表示メッセージ"
+    },
+    
+    "tapPlusToCreateDeck": "追加ボタンをタップして単語帳を作成しましょう",
+    "@tapPlusToCreateDeck": {
+        "description": "単語帳作成を促すメッセージ"
+    },
+    
+    "createFirstDeck": "最初の単語帳を作成",
+    "@createFirstDeck": {
+        "description": "最初の単語帳作成ボタンのラベル"
+    },
+    
+    "edit": "編集",
+    "@edit": {
+        "description": "編集ボタンのラベル"
+    },
+    
+    "delete": "削除",
+    "@delete": {
+        "description": "削除ボタンのラベル"
+    },
+    
+    "share": "共有",
+    "@share": {
+        "description": "共有ボタンのラベル"
+    },
+    
+    "export": "エクスポート",
+    "@export": {
+        "description": "エクスポートボタンのラベル"
+    },
+    
+    "@cancel": {
+        "description": "キャンセルボタンのラベル"
+    },
+    
+    "practice": "練習",
+    "@practice": {
+        "description": "練習ボタンのラベル"
+    },
+    
+    "deleteDeck": "単語帳を削除",
+    "@deleteDeck": {
+        "description": "単語帳削除ダイアログのタイトル"
+    },
+    
+    "deleteDeckConfirmation": "{deckName}を削除してもよろしいですか？",
+    "@deleteDeckConfirmation": {
+        "description": "単語帳削除の確認メッセージ",
+        "placeholders": {
+        "deckName": {
+            "type": "String",
+            "example": "英単語基本セット"
+        }
+        }
+    },
+    
+    "wordsCount": "{count}単語",
+    "@wordsCount": {
+        "description": "単語数の表示",
+        "placeholders": {
+        "count": {
+            "type": "int",
+            "example": "42"
+        }
+        }
+    },
+    
+    "justNow": "たった今",
+    "@justNow": {
+        "description": "時間表示（たった今）"
+    },
+    
+    "minutesAgo": "{minutes}分前",
+    "@minutesAgo": {
+        "description": "時間表示（分前）",
+        "placeholders": {
+        "minutes": {
+            "type": "int",
+            "example": "5"
+        }
+        }
+    },
+    
+    "hoursAgo": "{hours}時間前",
+    "@hoursAgo": {
+        "description": "時間表示（時間前）",
+        "placeholders": {
+        "hours": {
+            "type": "int",
+            "example": "3"
+        }
+        }
+    },
+    
+    "daysAgo": "{days}日前",
+    "@daysAgo": {
+        "description": "時間表示（日前）",
+        "placeholders": {
+        "days": {
+            "type": "int",
+            "example": "2"
+        }
+        }
+    },
+    
+    "errorLoadingDecks": "単語帳の読み込みエラー",
+    "@errorLoadingDecks": {
+        "description": "単語帳読み込みエラーメッセージ"
+    },
+    "errorLoadingWords": "単語の読み込みエラー",
+
+    "deckNotFound": "単語帳が見つかりません",
+    "cancelSearch": "検索をキャンセル",
+    "search": "検索",
+    "addNewWord": "新しい単語を追加",
+    "errorLoadingDeck": "単語帳の読み込みエラー",
+    "searchVocabulary": "単語を検索...",
+    "filterBy": "フィルター",
+    "all": "すべて",
+    "beginner": "初級",
+    "intermediate": "中級",
+    "advanced": "上級",
+    "noWordsInDeck": "この単語帳にはまだ単語がありません",
+    "noSearchResults": "該当する単語が見つかりません",
+    "tryDifferentSearch": "別の検索語を試してください",
+    "addWordsToStartStudying": "データを追加して単語帳を作りましょう",
+    "addFirstWord": "最初の単語を追加",
+    "deleteWarning": "この操作は元に戻せません。この単語帳のすべての単語が完全に削除されます。"
+}
