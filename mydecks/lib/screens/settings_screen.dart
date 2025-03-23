@@ -41,7 +41,8 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
     final theme = Theme.of(context);
     final languageState = ref.watch(languageProvider);
     final themeMode = ref.watch(themeModeProvider);
-    final isDarkMode = themeMode == ThemeMode.dark;
+    final isDarkMode = themeMode == ThemeMode.dark || 
+    (themeMode == ThemeMode.system && MediaQuery.of(context).platformBrightness == Brightness.dark);
 
     
     final safeNativeLanguage = getSafeLanguage(

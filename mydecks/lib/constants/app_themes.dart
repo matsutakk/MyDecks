@@ -2,14 +2,11 @@ import 'package:flutter/material.dart';
 import 'app_colors.dart';
 
 class AppThemes {
-  // 共通の設定値
   static const double _defaultBorderRadius = 12.0;
   static const double _buttonBorderRadius = 8.0;
   static const double _bottomSheetRadius = 16.0;
-  
   static const EdgeInsets _buttonPadding = EdgeInsets.symmetric(horizontal: 16, vertical: 12);
   
-  // ライトテーマ
   static ThemeData get lightTheme {
     return _createTheme(
       brightness: Brightness.light,
@@ -34,7 +31,6 @@ class AppThemes {
     );
   }
   
-  // ダークテーマ
   static ThemeData get darkTheme {
     return _createTheme(
       brightness: Brightness.dark,
@@ -59,7 +55,6 @@ class AppThemes {
     );
   }
   
-  // テーマ作成の共通メソッド
   static ThemeData _createTheme({
     required Brightness brightness,
     required Color primaryColor,
@@ -77,7 +72,7 @@ class AppThemes {
     required Color bottomAppBarColor,
     required Color bottomSheetBackgroundColor,
   }) {
-    // primaryとaccentのライト/ダークバリエーション
+
     final primaryLight = brightness == Brightness.light 
       ? AppColors.primaryLight 
       : AppColors.primary;
@@ -86,7 +81,6 @@ class AppThemes {
       ? AppColors.accentLight 
       : AppColors.accent;
       
-    // ColorScheme の構築
     final colorScheme = brightness == Brightness.light
       ? ColorScheme.light(
           primary: primaryColor,
@@ -107,14 +101,12 @@ class AppThemes {
           error: errorColor,
         );
       
-    // テーマデータの構築
     return ThemeData(
       brightness: brightness,
       primaryColor: primaryColor,
       colorScheme: colorScheme,
       scaffoldBackgroundColor: backgroundColor,
       
-      // AppBar テーマ
       appBarTheme: AppBarTheme(
         backgroundColor: appBarBackgroundColor,
         foregroundColor: appBarForegroundColor,
@@ -127,7 +119,6 @@ class AppThemes {
         ),
       ),
       
-      // Card テーマ
       cardTheme: CardTheme(
         color: cardBackgroundColor,
         elevation: 1.0,
@@ -138,7 +129,6 @@ class AppThemes {
         clipBehavior: Clip.antiAlias,
       ),
       
-      // ボタンテーマ
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
           backgroundColor: primaryColor,
@@ -172,7 +162,6 @@ class AppThemes {
         ),
       ),
       
-      // TabBar テーマ
       tabBarTheme: TabBarTheme(
         labelColor: tabBarSelectedColor,
         unselectedLabelColor: tabBarUnselectedColor,
@@ -182,7 +171,6 @@ class AppThemes {
         unselectedLabelStyle: const TextStyle(fontWeight: FontWeight.normal),
       ),
       
-      // FAB テーマ
       floatingActionButtonTheme: FloatingActionButtonThemeData(
         backgroundColor: secondaryColor,
         foregroundColor: Colors.white,
@@ -193,7 +181,6 @@ class AppThemes {
         sizeConstraints: const BoxConstraints.tightFor(width: 56, height: 56), // サイズを標準に
       ),
       
-      // BottomAppBar テーマ
       bottomAppBarTheme: BottomAppBarTheme(
         color: bottomAppBarColor,
         elevation: 4, // 影を控えめに
@@ -202,7 +189,6 @@ class AppThemes {
         shape: const CircularNotchedRectangle(),
       ),
       
-      // BottomSheet テーマ
       bottomSheetTheme: BottomSheetThemeData(
         backgroundColor: bottomSheetBackgroundColor,
         elevation: 8,
@@ -213,7 +199,6 @@ class AppThemes {
         ),
       ),
       
-      // Input テーマ
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
         fillColor: brightness == Brightness.light 
@@ -234,7 +219,6 @@ class AppThemes {
         contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
       ),
       
-      // Divider テーマ
       dividerTheme: DividerThemeData(
         color: brightness == Brightness.light 
             ? Colors.grey[300] 
@@ -243,7 +227,6 @@ class AppThemes {
         space: 1,
       ),
       
-      // チェックボックス、スイッチなどのアクセント色
       checkboxTheme: CheckboxThemeData(
         fillColor: MaterialStateProperty.resolveWith<Color>((states) {
           if (states.contains(MaterialState.disabled)) {
@@ -253,7 +236,6 @@ class AppThemes {
         }),
       ),
       
-      // Material 3 を有効化（オプション）
       useMaterial3: true,
     );
   }

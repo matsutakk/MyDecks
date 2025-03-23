@@ -14,7 +14,8 @@ class WordCard extends StatelessWidget {
   });
 
   Future<void> _speak(String text) async {
-    await flutterTts.setLanguage(word.targetLanguage);
+    // await flutterTts.setLanguage(word.targetLanguage);
+    await flutterTts.setLanguage('en-US');
     await flutterTts.setPitch(1.0);
     await flutterTts.speak(text);
   }
@@ -29,7 +30,7 @@ class WordCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
       ),
       child: InkWell(
-        onTap: onTap,
+        // onTap: onTap,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

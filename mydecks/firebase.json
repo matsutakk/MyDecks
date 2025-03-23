@@ -1,1 +1,55 @@
-{"flutter":{"platforms":{"android":{"default":{"projectId":"my-voice-tutor","appId":"1:412604211422:android:33cfcf0443e7c5e4cd224f","fileOutput":"android/app/google-services.json"}},"ios":{"default":{"projectId":"my-voice-tutor","appId":"1:412604211422:ios:a63dab80d290c53fcd224f","uploadDebugSymbols":false,"fileOutput":"ios/Runner/GoogleService-Info.plist"}},"macos":{"default":{"projectId":"my-voice-tutor","appId":"1:412604211422:ios:a63dab80d290c53fcd224f","uploadDebugSymbols":false,"fileOutput":"macos/Runner/GoogleService-Info.plist"}},"dart":{"lib/firebase_options.dart":{"projectId":"my-voice-tutor","configurations":{"android":"1:412604211422:android:33cfcf0443e7c5e4cd224f","ios":"1:412604211422:ios:a63dab80d290c53fcd224f","macos":"1:412604211422:ios:a63dab80d290c53fcd224f","web":"1:412604211422:web:372203d9b0ba8de9cd224f","windows":"1:412604211422:web:fbe9aef1d8dcac45cd224f"}}}}}}
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "my-voice-tutor",
+          "appId": "1:412604211422:android:33cfcf0443e7c5e4cd224f",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "my-voice-tutor",
+          "appId": "1:412604211422:ios:a63dab80d290c53fcd224f",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "macos": {
+        "default": {
+          "projectId": "my-voice-tutor",
+          "appId": "1:412604211422:ios:a63dab80d290c53fcd224f",
+          "uploadDebugSymbols": false,
+          "fileOutput": "macos/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "my-voice-tutor",
+          "configurations": {
+            "android": "1:412604211422:android:33cfcf0443e7c5e4cd224f",
+            "ios": "1:412604211422:ios:a63dab80d290c53fcd224f",
+            "macos": "1:412604211422:ios:a63dab80d290c53fcd224f",
+            "web": "1:412604211422:web:372203d9b0ba8de9cd224f",
+            "windows": "1:412604211422:web:fbe9aef1d8dcac45cd224f"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

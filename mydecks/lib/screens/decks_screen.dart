@@ -15,6 +15,7 @@ class DeckListScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context)!;
+    final theme = Theme.of(context);
     final decksAsync = ref.watch(allDecksStreamProvider);
 
     return Scaffold(
@@ -29,7 +30,7 @@ class DeckListScreen extends ConsumerWidget {
         error: (error, stack) => Center(
           child: Text(
             '${l10n.errorLoadingDecks}: $error',
-            style: TextStyle(color: Theme.of(context).colorScheme.error),
+            style: TextStyle(color: theme.colorScheme.error),
           ),
         ),
       ),
@@ -50,6 +51,8 @@ class DeckListScreen extends ConsumerWidget {
     AppLocalizations l10n,
     WidgetRef ref,
   ) {
+    final theme = Theme.of(context);
+
     return RefreshIndicator(
       onRefresh: () async {
         ref.invalidate(allDecksProvider);
@@ -80,11 +83,11 @@ class DeckListScreen extends ConsumerWidget {
                       errorBuilder: (context, error, stackTrace) {
                         return Container(
                           height: 80,
-                          color: Theme.of(context).colorScheme.surfaceVariant,
+                          color: theme.colorScheme.surfaceVariant,
                           child: Center(
                             child: Icon(
                               Icons.image_not_supported,
-                              color: Theme.of(context).colorScheme.onSurfaceVariant,
+                              color: theme.colorScheme.onSurfaceVariant,
                             ),
                           ),
                         );
@@ -101,7 +104,7 @@ class DeckListScreen extends ConsumerWidget {
                             Expanded(
                               child: Text(
                                 deck.title,
-                                style: Theme.of(context).textTheme.titleLarge,
+                                style: theme.textTheme.titleLarge,
                                 maxLines: 1,
                                 overflow: TextOverflow.ellipsis,
                               ),
@@ -113,7 +116,7 @@ class DeckListScreen extends ConsumerWidget {
                           const SizedBox(height: 8),
                           Text(
                             deck.description,
-                            style: Theme.of(context).textTheme.bodyMedium,
+                            style: theme.textTheme.bodyMedium,
                             maxLines: 2,
                             overflow: TextOverflow.ellipsis,
                           ),
@@ -124,11 +127,11 @@ class DeckListScreen extends ConsumerWidget {
                           children: [
                             Text(
                               l10n.wordsCount(deck.wordCount),
-                              style: Theme.of(context).textTheme.bodySmall,
+                              style: theme.textTheme.bodySmall,
                             ),
                             Text(
                               _formatDate(deck.updatedAt, l10n),
-                              style: Theme.of(context).textTheme.bodySmall,
+                              style: theme.textTheme.bodySmall,
                             ),
                           ],
                         ),
@@ -149,6 +152,7 @@ class DeckListScreen extends ConsumerWidget {
     Deck deck,
     AppLocalizations l10n,
   ) {
+    final theme = Theme.of(context);
     return PopupMenuButton<String>(
       icon: const Icon(Icons.more_vert),
       onSelected: (value) async {
@@ -169,7 +173,7 @@ class DeckListScreen extends ConsumerWidget {
                   TextButton(
                     onPressed: () => Navigator.pop(context, true),
                     style: TextButton.styleFrom(
-                      foregroundColor: Theme.of(context).colorScheme.error,
+                      foregroundColor: theme.colorScheme.error,
                     ),
                     child: Text(l10n.delete),
                   ),
@@ -193,11 +197,11 @@ class DeckListScreen extends ConsumerWidget {
           child: ListTile(
             leading: Icon(
               Icons.delete,
-              color: Theme.of(context).colorScheme.error,
+              color: theme.colorScheme.error,
             ),
             title: Text(
               l10n.delete,
-              style: TextStyle(color: Theme.of(context).colorScheme.error),
+              style: TextStyle(color: theme.colorScheme.error),
             ),
             contentPadding: EdgeInsets.zero,
             dense: true,

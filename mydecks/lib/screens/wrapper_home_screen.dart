@@ -78,7 +78,7 @@ class _WrapperHomeScreenState extends ConsumerState<WrapperHomeScreen> {
             Expanded(
               child: IconButton(
                 icon: Icon(
-                  Icons.history,
+                  Icons.book,
                   color: currentIndex == 1 
                     ? colorScheme.secondary
                     : colorScheme.onSurface,
